@@ -41,7 +41,7 @@ if (env === 'production') {
       compress: {
         dead_code: true,
       },
-    })
+    }),
   )
 }
 

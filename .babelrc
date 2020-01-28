@@ -16,7 +16,7 @@
               "node": "current",
               "browsers": ["last 2 versions", "ie >= 11"]
             },
-            "modules": "commonjs",
+            "modules": false,
             "loose": true
           }
         ],
@@ -40,9 +40,7 @@
         "@babel/preset-flow",
         "@babel/preset-react"
       ],
-      "plugins": [
-        "@babel/plugin-transform-runtime"
-      ]
+      "plugins": ["@babel/plugin-transform-runtime"]
     },
     "jsnext": {
       "presets": [
@@ -60,9 +58,7 @@
         "@babel/preset-flow",
         "@babel/preset-react"
       ],
-      "plugins": [
-        ["@babel/plugin-transform-runtime", { "useESModules": true }]
-      ]
+      "plugins": [["@babel/plugin-transform-runtime", { "useESModules": true }]]
     }
   }
 }
